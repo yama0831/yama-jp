@@ -1,0 +1,89 @@
+/*!
+ * login v0.0.1
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+
+#content {
+	background-color: #FFFFFF;
+	border-radius: 4px 4px 4px 4px;
+}
+.pad {
+	padding: 45px;
+}
+
+#hero-container, #shell, .nav_wrapper .nav_container {
+    width: 580px;
+}
+#shell {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px 5px 5px 5px;
+	padding: 3px;
+	position: relative;
+	top: -20px;
+}
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 1032px;
+}
+
+#hero-container {
+    background: none repeat scroll 0 0 #D7D9DA;
+    width: 100%;
+}
+
+#header #hero h1 {
+    color: #374248;
+    margin-left: -30px;
+}
+#header #hero h1 {
+    color: #374248;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 52px;
+    margin: 20px 0;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+}
+
+#public .field {
+    background: none repeat scroll 0 0 #EBECEC;
+    padding: 10px;
+}
+.big, .big input {
+    font-size: 18px;
+}
+.field {
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    position: relative;
+}
+span.field input {
+    margin-right: 15px;
+    width: 97%;
+}
+#public input.submit {
+    font-size: 13px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    width: auto;
+}
+#public .link.green, .link.green {
+    background: linear-gradient(to bottom, #A4CB53 0%, #86BB3F 100%) repeat scroll 0 0 transparent;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 -2px rgba(0, 0, 0, 0.15) inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#form_submit {
+	text-align: right;
+}
