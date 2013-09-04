@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="jp">
 <head>
 	<meta charset="UTF-8">
-	<title>template</title>
+	<title><?php echo $title; ?></title>
 	<link href="./css/template.css" rel="stylesheet">
 	<link href="./css/bootstrap.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
 			</div>
 		</div>
 	</header>
-	<!--<?php $Cotent ?>-->ssssssss
-	<footer>aaaaaaaaa</footer>
+	<?php echo $Cotent; ?>
+	<footer></footer>
 </body>
 </html>
