@@ -1,0 +1,17 @@
+/*!
+ * template v0.0.1
+ */
+
+.nav_wrapper {
+    background: none repeat scroll 0 0 #3F4B51;
+}
+.nav_wrapper {
+    background: none repeat scroll 0 0 rgba(52, 65, 72, 0.95);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1010;
+}
+.logo {
+	color: #FFFF00;
+}
