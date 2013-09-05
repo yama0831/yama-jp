@@ -6,7 +6,7 @@
 	<link href="./css/template.css" rel="stylesheet">
 	<link href="./css/bootstrap.css" rel="stylesheet">
 </head>
-<body>
+<body <?php echo $style; ?>>
 	<header>
 		<div class="nav_wrapper">
 			<div class="nav_container">

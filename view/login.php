@@ -1,5 +1,4 @@
 	<link href="./css/login.css" rel="stylesheet">
-<body id="public" class="login" data-twttr-rendered="true">
 	<div id="header">
 		<div id="hero-container">
 			<div id="hero" class="pad">
@@ -32,4 +31,3 @@
 	</div>
 	<div id="footer">
 	</div>
-</body>
