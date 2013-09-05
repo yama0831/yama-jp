@@ -16,7 +16,7 @@
 			</div>
 		</div>
 	</header>
-	<?php echo $Cotent; ?>
+	<?php echo $Content; ?>
 	<footer></footer>
 </body>
 </html>

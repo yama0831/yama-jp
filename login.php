@@ -1,7 +1,14 @@
 <?php
-	$content = "";
-	$contents = "";
+	require("template.php");
+
 	$title = "Log In";
-	$content = include("login.html");
-	$contents = include("template.php");
-	echo $contents;
+	$Content = include("login.html");
+
+	$data = array(
+				"title" => $title,
+				"content" => $content
+			);
+
+	extract($data);
+
+	echo $html;
