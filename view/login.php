@@ -9,7 +9,7 @@
 	<div id="wrapper">
 		<div id="shell" class="container">
 			<div id="content" class="pad">
-				<form action="" method="POST">
+				<form action="login.php" method="POST">
 					<p>
 						<span class="field big">
 							<label for="user_name">ユーザーID</label>
