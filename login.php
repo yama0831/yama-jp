@@ -1,20 +1,42 @@
 <?php
+	require_once './System/DBManager';
 
-	if(isset($_POST['user_name']) && isset($_POST['pass']))
-	{
-		if($_POST['user_name'] == "yama" && $_POST['pass'] == "123")
+	// ★今のとこおまじない
+	session_start();
+
+	// DBへ接続
+	$db = getDb();
+
+	try {
+
+		// ★DBからユーザーID、パスワードを取得
+		$result =  $db->query('SELECT * FROM M_USER');
+		//$result =  $db->query('SELECT * FROM M_USER WHERE user_name = \'' . $_POST['user_name'] . '\'' );
+		$row = $result->fetch(PDO::FETCH_ASSOC);
+
+		if(isset($_POST['user_name']) && isset($_POST['pass']))
 		{
-			// ログイン成功
-			$url = "/view/Portal.php";
-			header("Location: $url");
+			if($_POST['user_name'] == "yama" && $_POST['pass'] == "123")
+			{
+				// ログイン成功
+				$url = "/view/Portal.php";
+				header("Location: $url");
+			}
+			else
+			{
+				// ログイン失敗
+				echo "false";
+			}
 		}
 		else
 		{
-			// ログイン失敗
-			echo "false";
+			echo "入力してください。";
 		}
+
 	}
-	else
+	catch(Exception $e)
 	{
-		echo "入力してください。";
+		die("YamaError：{$e->getMessage()}");
 	}
+
+?>
