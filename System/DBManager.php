@@ -1,4 +1,7 @@
 <?php
+/**************************
+ * DB関連クラス
+ **************************/
 	function getDb()
 	{
 		$dsn = 'mysql:dbname=seigyo_yama;host=mysql474.db.sakura.ne.jp';
@@ -13,9 +16,9 @@
 			// 文字コードを明示
 			$db->exec('SET NAMES utf8');
 		}
-		catch(PDOException $e)
+		catch(Exception $ex)
 		{
-			die("接続エラー: {$e->getMessage()}");
+			throw $ex;
 		}
 		return $db;
 	}

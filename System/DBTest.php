@@ -5,7 +5,7 @@
 	$db = getDb();
 
 	// DBからユーザーID、パスワードを取得
-	$result =  $db->query('SELECT * FROM M_USER');
+	$result =  $db->query('SELECT * FROM M_USER where del_flg = 0');
 
 	// 取得データを展開
 	while($row = $result->fetch(PDO::FETCH_ASSOC)){
